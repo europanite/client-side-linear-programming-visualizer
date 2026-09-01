@@ -44,7 +44,7 @@ export default function LPGraph({ problem, solution }: { problem: LPProblem; sol
   const yAxisX = sx(0);
 
   return (
-    <View style={styles.wrapper}>
+    <View style={styles.graphFrame}>
       <Svg width="100%" height="auto" viewBox={`0 0 ${W} ${H}`} accessibilityLabel="Linear programming graph">
         {ticks.map((tick, i) => (
           <React.Fragment key={`major-grid-${i}`}>
