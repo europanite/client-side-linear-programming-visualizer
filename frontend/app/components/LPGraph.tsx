@@ -127,4 +127,10 @@ const styles = StyleSheet.create({
   swatch: { width: 18, height: 12, borderWidth: 1, borderColor: '#16a34a' },
   dot: { width: 10, height: 10, borderRadius: 5 },
   dash: { width: 22, height: 2, backgroundColor: '#111827' },
+  graphFrame: {
+    width: '100%',
+    maxWidth: W,
+    aspectRatio: W / H,
+    alignSelf: 'center',
+  },
 });
