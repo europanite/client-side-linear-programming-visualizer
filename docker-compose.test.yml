@@ -1,0 +1,10 @@
+services:
+  frontend_test:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.test
+    working_dir: /app
+    volumes:
+      - ./frontend/app:/app
+      - /app/node_modules
+    command: sh -lc "npm install && npm test -- --ci --runInBand --verbose"

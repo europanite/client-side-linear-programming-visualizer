@@ -1,0 +1,18 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: linear_programming_frontend
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./frontend/app:/app
+      - /app/node_modules
+    ports:
+      - "19000:19000"
+      - "19001:19001"
+      - "19002:19002"
+      - "8081:8081"
+    command: sh -lc "npm install && npx expo start"

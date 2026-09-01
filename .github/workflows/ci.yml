@@ -1,0 +1,33 @@
+name: CI
+on:
+  push:
+  pull_request:
+concurrency:
+  group: frontend-ci-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install dependencies
+        working-directory: frontend/app
+        run: npm install
+      - name: Type check
+        working-directory: frontend/app
+        run: npm run typecheck
+      - name: Tests
+        working-directory: frontend/app
+        run: npm test -- --ci --runInBand
+      - name: Expo web export
+        working-directory: frontend/app
+        run: npm run export:web

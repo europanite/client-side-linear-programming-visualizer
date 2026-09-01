@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Linear Programming Visualizer",
+    "slug": "linear-programming-visualizer",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true },
+    "android": { "predictiveBackGestureEnabled": false },
+    "experiments": { "baseUrl": "/linear-programming-visualizer" },
+    "web": { "output": "single", "bundler": "metro" }
+  }
+}
