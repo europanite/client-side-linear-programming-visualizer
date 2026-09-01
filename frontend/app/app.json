@@ -1,14 +1,14 @@
 {
   "expo": {
     "name": "Linear Programming Visualizer",
-    "slug": "clinet-side-linear-programming-visualizer",
+    "slug": "client-side-linear-programming-visualizer",
     "version": "1.0.0",
     "orientation": "default",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": { "supportsTablet": true },
     "android": { "predictiveBackGestureEnabled": false },
-    "experiments": { "baseUrl": "/clinet-side-linear-programming-visualizer" },
+    "experiments": { "baseUrl": "/client-side-linear-programming-visualizer" },
     "web": { "output": "single", "bundler": "metro" }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "clinet-side-linear-programming-visualizer",
+  "name": "client-side-linear-programming-visualizer",
   "version": "1.0.0",
   "private": true,
   "main": "index.ts",
