@@ -10,7 +10,6 @@ export default function SettingsBar() {
         <View style={styles.brandRow}>
           <View>
             <Text style={styles.title}>2D Linear Programming</Text>
-            <Text style={styles.subtitle}>Graphical solver · client-side only</Text>
           </View>
           <Pressable
             accessibilityRole="link"
