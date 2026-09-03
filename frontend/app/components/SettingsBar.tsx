@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View,  TouchableOpacity, Linking  } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { REPO_URL } from '../screens/HomeScreenUtil';
 
@@ -8,16 +8,19 @@ export default function SettingsBar() {
     <SafeAreaView edges={['top']} style={styles.safeArea}>
       <View style={styles.bar}>
         <View style={styles.brandRow}>
-          <View>
-            <Text style={styles.title}>2D Linear Programming</Text>
-          </View>
-          <Pressable
-            accessibilityRole="link"
-            onPress={() => Linking.openURL(REPO_URL)}
-            style={({ pressed }) => [styles.linkButton, pressed && styles.pressed]}
-          >
-            <Text style={styles.linkText}>GitHub</Text>
-          </Pressable>
+          <TouchableOpacity onPress={() => Linking.openURL(REPO_URL)}>
+            <Text
+              style={{
+                fontSize: 24,
+                fontWeight: "800",
+                marginBottom: 12,
+                color: "rgb(255, 255, 255)",
+                textDecorationLine: "underline",
+              }}
+            >
+              2D Linear Programming
+            </Text>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>
