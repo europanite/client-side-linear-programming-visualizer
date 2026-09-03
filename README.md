@@ -1,7 +1,9 @@
-# 2D Linear Programming Visualizer
+# [2D Linear Programming Visualizer](https://github.com/europanite/client-side-linear-programming-visualizer "2D Linear Programming Visualizer")
 
 [![CI](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/ci.yml)
 [![GitHub Pages](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/deploy-pages.yml)
+
+!["web_ui"](./assets/images/web_ui.png)
 
 A client-side graphical solver for two-variable linear programming problems, built with Expo / React Native Web.
 
