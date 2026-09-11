@@ -1,7 +1,8 @@
 # [2D Linear Programming Visualizer](https://github.com/europanite/client-side-linear-programming-visualizer "2D Linear Programming Visualizer")
 
 [![CI](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/ci.yml)
-[![GitHub Pages](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/deploy-pages.yml)
+[![docker](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/docker.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/docker.yml)
+[![GitHub Pages](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/pages.yml)
 
 !["web_ui"](./assets/images/web_ui.png)
 
