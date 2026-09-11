@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/ci.yml)
 [![docker](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/docker.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/docker.yml)
-[![GitHub Pages](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/pages.yml)
+[![GitHub Pages](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/pages.yml/badge.svg)](https://github.com/europanite/client-side-linear-programming-visualizer/actions/workflows/pages.yml)
 
 !["web_ui"](./assets/images/web_ui.png)
 
