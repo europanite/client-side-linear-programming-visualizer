@@ -17,11 +17,24 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
       - name: Install dependencies
         working-directory: frontend/app
         run: npm install
-      - name: Build web app
+      - name: Generate sitemap
+        run: |
+          LASTMOD="$(git log -1 --format=%cs)"
+          cat > frontend/app/public/sitemap.xml <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            <url>
+              <loc>https://europanite.github.io/dummy_page/</loc>
+              <lastmod>${LASTMOD}</lastmod>
+            </url>
+          </urlset>
+          EOF
+          cat frontend/app/public/sitemap.xml
+      - name: Build
         working-directory: frontend/app
         run: npm run export:web
       - uses: actions/upload-pages-artifact@v3
